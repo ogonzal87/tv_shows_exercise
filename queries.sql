@@ -1,5 +1,9 @@
-List all of the tv shows sorted by genre then by name
-List all of the tv shows sorted by genre then by rating
-List the number of tv shows by genre
-List the average rating by genre
-List the highest rated tv show that is still airing
+SELECT * from shows order by genre, name;
+
+SELECT * FROM shows ORDER BY genre, rating;
+
+SELECT count(genre), genre FROM shows GROUP BY genre;
+
+SELECT AVG(rating), genre FROM shows GROUP BY genre;
+
+SELECT * FROM shows WHERE airing = 'true' order by name Asc LIMIT 1;

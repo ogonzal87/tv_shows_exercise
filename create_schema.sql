@@ -1,7 +1,7 @@
 CREATE TABLE shows (
-	id serial PRIMARY KEY
+	id serial PRIMARY KEY,
 	name varchar(50) NOT NULL,
 	genre varchar(50) NOT NULL,
 	rating integer DEFAULT 0,
-	airing : boolean
+	airing boolean
 );
